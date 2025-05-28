@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Intro</title>
+</head>
+<body>
+  <h2>Результати завдань</h2>
+  <table id="results" style="border: 1px solid;">
+    <tr><th>Завдання</th><th>Результат</th></tr>
+  </table>
+
+  <script>
+    const table = document.getElementById("results");
+    var html = "";
+    // 1
+    const name = prompt("Як тебе звати?");
+    const greeting = `Привіт, ${name}!`;
+    alert(greeting);
+    html += `<tr><td>1. Ім’я</td><td>${greeting}</td></tr>`;
+
+    // 2
+    const birthYear = parseInt(prompt("Введіть рік народження:"));
+    const CURRENT_YEAR = 2025;
+    const age = CURRENT_YEAR - birthYear;
+    alert(`Тобі приблизно ${age} років.`);
+    html += `<tr><td>2. Вік</td><td>Тобі приблизно ${age} років.</td></tr>`;
+
+    // 3
+    const side = parseFloat(prompt("Введіть довжину сторони квадрата:"));
+    const perimeter = 4 * side;
+    alert(`Периметр квадрата: ${perimeter}`);
+    html += `<tr><td>3. Периметр квадрата</td><td>${perimeter}</td></tr>`;
+
+    // 4
+    const radius = parseFloat(prompt("Введіть радіус кола:"));
+    const area = Math.PI * radius ** 2;
+    alert(`Площа кола: ${area.toFixed(2)}`);
+    html += `<tr><td>4. Площа кола</td><td>${area.toFixed(2)}</td></tr>`;
+
+    // 5
+    const distance = parseFloat(prompt("Відстань між містами (км):"));
+    const time = parseFloat(prompt("За скільки годин хочеш доїхати?"));
+    const speed = distance / time;
+    alert(`Тобі треба рухатись зі швидкістю: ${speed.toFixed(2)} км/год`);
+    html += `<tr><td>5. Необхідна швидкість</td><td>${speed.toFixed(2)} км/год</td></tr>`;
+
+    // 6
+    const dollars = parseFloat(prompt("Введіть суму в доларах:"));
+    const USD_TO_EUR = 0.92;
+    const euros = dollars * USD_TO_EUR;
+    alert(`Це приблизно: €${euros.toFixed(2)}`);
+    html += `<tr><td>6. Конвертація в євро</td><td>€${euros.toFixed(2)}</td></tr>`;
+
+    // 7
+    const gb = parseFloat(prompt("Обсяг флешки в ГБ:"));
+    const mb = gb * 1024;
+    const fileSize = 820;
+    const fileCount = Math.floor(mb / fileSize);
+    alert(`На флешку вміститься: ${fileCount} файлів`);
+    html += `<tr><td>7. Кількість файлів</td><td>${fileCount} файлів</td></tr>`;
+
+    // 8
+    const money = parseFloat(prompt("Сума у гаманці:"));
+    const price = parseFloat(prompt("Ціна однієї шоколадки:"));
+    const chocoCount = Math.floor(money / price);
+    const change = money - chocoCount * price;
+    alert(`Ти можеш купити ${chocoCount} шоколадок. Здача: ${change.toFixed(2)} грн`);
+    html += `<tr><td>8. Шоколадки</td><td>${chocoCount} шт, здача: ${change.toFixed(2)} грн</td></tr>`;
+
+    // 9
+    const number = parseInt(prompt("Введіть тризначне число:"));
+    const reversed = parseInt(
+      number % 10 + "" + Math.floor((number % 100) / 10) + "" + Math.floor(number / 100)
+    );
+    alert(`Число-перевертень: ${reversed}`);
+    html += `<tr><td>9. Паліндром</td><td>${reversed}</td></tr>`;
+
+    // 10
+    const integer = parseInt(prompt("Введіть ціле число:"));
+    const even = !(integer % 2);
+    const parity = even && "Парне" || "Непарне";
+    alert(parity);
+    html += `<tr><td>10. Парність</td><td>${parity}</td></tr>`;
+
+    table.innerHTML += html;
+  </script>
+</body>
+</html>
