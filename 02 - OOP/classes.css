@@ -1,0 +1,11 @@
+.product {
+    border:2px solid gray;
+    margin: 8px;
+    padding: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+}
