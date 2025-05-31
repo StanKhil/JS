@@ -1,0 +1,9 @@
+.console{
+    border:2px solid lightgray;
+    display: inline-block;
+    height: 600px;
+    vertical-align: top;
+    width:200px;
+}
+
+
