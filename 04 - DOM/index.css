@@ -1,0 +1,10 @@
+#copy-task{
+    display:none !important;
+}
+
+.sheet{
+    border:1px solid lightgray;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 3px #ddd;
+}
