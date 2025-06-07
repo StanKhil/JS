@@ -1,0 +1,11 @@
+.message-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+.message-meta {
+    font-size: 0.85em;
+    color: #777;
+}

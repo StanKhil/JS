@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Task2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="task2.css">
+    <link rel="icon" href="JavaScript-logo.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Тест на знання JavaScript</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Що виведе console.log(typeof null)?</p>
+                <label><input type="radio" name="q1" value="a"> "null"</label><br>
+                <label><input type="radio" name="q1" value="b"> "object"</label>
+            </div>
+            <div class="question">
+                <p>2. Який результат вираза 2 + "2" у JavaScript?</p>
+                <label><input type="radio" name="q2" value="a"> "22"</label><br>
+                <label><input type="radio" name="q2" value="b"> 4</label>
+            </div>
+            <div class="question">
+                <p>3. Що таке 'NaN' у JavaScript?</p>
+                <label><input type="radio" name="q3" value="a"> Значення, яке означає "не число"</label><br>
+                <label><input type="radio" name="q3" value="b"> Новий об'єкт</label>
+            </div>
+            <button type="submit">Перевірити результати</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="task2.js"></script>
+</body>
+</html>

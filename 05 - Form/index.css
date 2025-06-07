@@ -1,0 +1,40 @@
+input[type = checkbox]:checked + label {
+  color: #4CAF50;
+
+}
+
+.vars-box{
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.vars-box:checked + label {
+    border:1px solid gray;
+}
+
+.vars-label{
+    border:1px solid transparent;
+}
+
+.rate{
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.rate:checked ~ label {
+    color:salmon;
+}
+
+.rating{
+    display:inline-flex;
+    flex-direction: row-reverse;
+}
+
+.rate:hover ~ label {
+    color: salmon;
+}
