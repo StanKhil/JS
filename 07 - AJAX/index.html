@@ -13,6 +13,19 @@
 <body>
     <div class="container">
         <h1>AJAX</h1>
+        <button id="load-moon-phase" class="btn btn-secondary">Moon phase</button>
+        <div id="moon-phase"></div>
+
+        <button id="load-rates" class="btn btn-primary">GET rates</button>
+        <div class="row justify-content-center my-2">
+            <div class="col-md-6">
+                <div class="search-container">
+                    <input id="search-rate" type="text" class="form-control search-input" placeholder="Search...">
+                    <i class="bi bi-search search-icon"></i>
+                </div>
+            </div>
+        </div>
+        <div id="rates"></div>
         <p>
             JSON - javaScript Object Notation
         </p>
@@ -23,6 +36,9 @@
             <li>Object : {"key":value}</li>
         </ul>
         <hr/>
+        <p>
+            CORS / CORP - (Cross Origin Resource Sharing / Policy) - домовленість щодо обміну даними 
+        </p>
         <button class="btn btn-primary" id="pause-btn">Pause</button>
         <button class="btn btn-warning" id="sequence-btn">Sequence</button>
     </div>

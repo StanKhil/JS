@@ -1,0 +1,23 @@
+.list-movie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: stretch;
+}
+
+.list-movie .card {
+    /* display: flex;
+    flex-direction: column; */
+    width: 18rem;
+    /* flex: 1 1 auto; */
+    width: 200px;
+    height: 520px;
+}
+
+.page-item button{
+    width: 100px;
+}
+
+.pagination{
+    justify-content: center;
+}
