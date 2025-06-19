@@ -1,0 +1,27 @@
+#field-block{
+    border:10px solid lightgray;
+    height : 300px;
+    width: 400px;
+    position: relative;
+}
+
+#ball-block{
+    background-color: rosybrown;
+    border:5px solid maroon;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+#brick-block{
+    background-color: rgb(90, 25, 14);
+    border: 5px solid rgb(105, 13, 13);
+    height: 50px;
+    width: 70px;
+    position: absolute;
+    left: 150px;
+    top: 100px;
+}
