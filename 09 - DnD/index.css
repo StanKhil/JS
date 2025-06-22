@@ -1,0 +1,37 @@
+.dnd-field {
+    border: 2px solid lightgray;
+    height: 65vw;
+    margin: 2vw;
+    position: relative;
+    width: 96%;
+}
+
+.dnd-item {
+    border-radius: 50%;
+    background-color: maroon;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    cursor: grab;
+}
+
+#left-block, #right-block {
+    border: 2px solid lightgray;
+    bottom: 0;
+    height: 25%;
+    position: absolute;
+    width: 45%;
+}
+
+#left-block {
+    left: 0;
+}
+
+#right-block {
+    right: 0;
+}
